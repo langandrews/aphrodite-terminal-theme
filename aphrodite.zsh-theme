@@ -25,9 +25,8 @@ aphrodite_get_prompt() {
 	fi
 
 	echo -n "%F{6}%n"
-	echo -n "%F{8}@"
-	echo -n "%F{12}%m"
-	echo -n "%F{8}:"
+	echo -n "%F{10}@"
+	echo -n "%F{12}%m:"
 	echo -n "%f%~"
 	echo -n " "
 
@@ -39,7 +38,7 @@ aphrodite_get_prompt() {
 	fi
 
 	if [[ -v APHRODITE_THEME_SHOW_TIME ]]; then
-		echo -n "%F{8} [%D{%H:%M:%S}]%f"
+		echo -n "%F{10} [%D{%H:%M:%S}]%f"
 	fi
 
 	echo  # new line
